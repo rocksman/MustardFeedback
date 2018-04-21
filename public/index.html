@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mustard Cafe | Feedback</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="assets/css/styles.css" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubbler+One" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg"
+        crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="container">
+        <img src="assets/images/mustard-cafe-logo.png" id="logo" />
+        <h1>HOW WOULD YOU RATE US?</h1>
+        <form>
+            <input type="button" value="GOOD" id="gbut" class="basic" name="good">
+            <input type="button" value="OKAY" id="nbut" class="basic" name="not-bad">
+            <input type="button" value="BAD" id="bbut" class="basic" name="bad">
+        </form>
+        <div class="modal" id="modal1">
+            <div class="modal-content">
+                <table cellspacing="15px">
+                    <form>
+                        <tr>
+                            <td>Food Quality:</td>
+                            <td>
+                                <span>
+                                    <i class="far fa-smile fq" id="fq1"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-meh fq" id="fq2"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-frown fq" id="fq3"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Cleanliness:</td>
+                            <td>
+                                <span>
+                                    <i class="far fa-smile cl" id="cl1"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-meh cl" id="cl2"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-frown cl" id="cl3"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Atmosphere:</td>
+                            <td>
+                                <span>
+                                    <i class="far fa-smile atm" id="atm1"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-meh atm" id="atm2"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-frown atm" id="atm3"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Service:</td>
+                            <td>
+                                <span>
+                                    <i class="far fa-smile ser" id="ser1"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-meh ser" id="ser2"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-frown ser" id="ser3"></i>
+                                </span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Value for money:</td>
+                            <td>
+                                <span>
+                                    <i class="far fa-smile vm" id="vm1"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-meh vm" id="vm2"></i>&nbsp;&nbsp;
+                                </span>
+                                <span>
+                                    <i class="far fa-frown vm" id="vm3"></i>
+                                </span>
+                            </td>
+                        </tr>
+                    </form>
+                </table>
+                <br/>
+                <button id="sbmt"> submit </button>
+            </div>
+        </div>
+    </div>
+    <div id="snackbar">
+        <img src="assets/images/mustard-cafe-logo.png" />Thank you for your
+        <b style="color:rgba(210,185,39,1)">feedback</b>!</div>
+</body>
+<script src="assets/js/script.js"></script>
+
+</html>
